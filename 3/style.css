@@ -39,28 +39,28 @@ section {
 }
 h2 {
   color: hsl(0, 0%, 100%);
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
 }
 
-h2::nth-child(2) {
-  color: red;
+.spancolor {
+  color: hsl(277, 64%, 61%);
 }
 p {
   color: hsla(0, 0%, 100%, 0.75);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
 .span1 {
   display: flex;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 28px;
   color: hsl(0, 0%, 100%);
 }
 .span2 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   color: hsla(0, 0%, 100%, 0.75);
 }
 .divtext2 {
@@ -76,6 +76,7 @@ p {
   background-size: cover;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  background-position: top;
 }
 
 @media (max-width: 992px) {
