@@ -124,12 +124,11 @@ p {
   .divtext2 {
     height: 10%;
     width: 90%;
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 40px;
   }
   .span1 {
     display: flex;
