@@ -80,42 +80,58 @@ p {
 
 @media (max-width: 992px) {
   main {
-    overflow: auto;
+    min-height: 200vh;
   }
   section {
-    width: 90%;
-    height: 85vh;
+    width: 100%;
+    height: 95%;
+    display: flex;
     flex-direction: column-reverse;
-    overflow: scroll;
   }
   .divimg {
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: 25%;
+    width: 86%;
     background: linear-gradient(
         hsl(277, 64%, 61%, 0.6),
         hsl(277, 64%, 61%, 0.6)
       ),
       url(./images/image-header-mobile.jpg);
-    border-top-right-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     border-top-left-radius: 8px;
     border-bottom-right-radius: unset;
   }
   .divtexto {
-    height: 10%;
-    width: 90%;
-    padding-top: 50px;
-    text-align: center;
+    height: 55%;
+    width: 86%;
+    border-top-left-radius: unset;
+    gap: 20px;
+    border: solid blue;
+    justify-content: space-around;
   }
   .divtext1 {
-    height: 65%;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 10%;
   }
+  p {
+    width: 86%;
+  }
+
   .divtext2 {
+    height: 10%;
+    width: 90%;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 12px;
+  }
+  .span1 {
+    display: flex;
+    justify-content: center;
   }
 }
