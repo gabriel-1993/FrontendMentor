@@ -35,11 +35,11 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 72%;
+  width: 74%;
 }
 h2 {
   color: hsl(0, 0%, 100%);
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 700;
 }
 
@@ -48,25 +48,25 @@ h2 {
 }
 p {
   color: hsla(0, 0%, 100%, 0.75);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
 .span1 {
   display: flex;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   color: hsl(0, 0%, 100%);
 }
 .span2 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   color: hsla(0, 0%, 100%, 0.75);
 }
 .divtext2 {
   display: flex;
   justify-content: space-between;
-  width: 72%;
+  width: 74%;
 }
 .divimg {
   height: 100%;
