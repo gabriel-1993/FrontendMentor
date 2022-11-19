@@ -22,7 +22,27 @@ section {
   justify-content: center;
   align-items: center;
 }
-a {
+ul {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+li {
   color: #fff;
   font-weight: 700;
+  border: solid 2px #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+a {
+  color: #fff;
+}
+li:hover,
+a:hover {
+  color: var(--color3);
+  transition: all 0.2s ease-in;
+  color: #f1f1f1;
+  background: rgb(12, 114, 12);
+  border: none;
+  transform: scale(1.1);
 }
