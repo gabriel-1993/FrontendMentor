@@ -33,7 +33,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: var(--background-main);
-  padding: 50px;
+  padding: 10px;
 }
 
 section {
@@ -41,17 +41,18 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: min(500px, 70%);
+  width: min(500px, 100%);
   gap: 10px;
+  border: solid white 1px;
 }
 .div1 {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  width: 80%;
+  width: min(400px, 100%);
 }
 .div2 {
-  width: 80%;
+  width: min(400px, 100%);
   height: 80px;
   border-radius: 10px;
   background-color: var(--calc-up);
@@ -75,7 +76,7 @@ section {
   letter-spacing: 5px;
 }
 .div3 {
-  width: 80%;
+  width: min(400px, 100%);
   display: flex;
   flex-direction: column;
   gap: 20px;
