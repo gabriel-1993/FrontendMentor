@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+  --naranja: hsl(35, 77%, 62%);
+  --rojo: hsl(5, 85%, 63%);
+  --blanco: hsl(36, 100%, 99%);
+  --celeste: hsl(233, 8%, 79%);
+  --azul1: hsl(236, 13%, 42%);
+  --azul2: hsl(240, 100%, 5%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  border: none;
+}
+
+header {
+  margin: auto;
+  height: 75px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* letra a la izquierda del header */
+.wHeader {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--azul2);
+}
+nav {
+  display: flex;
+  gap: 25px;
+}
+nav a {
+  cursor: pointer;
+  color: var(--azul1);
+  font-size: 15px;
+  font-weight: 400;
+}
+nav a:hover {
+  color: var(--rojo);
+}
+/* contenedor general luego del header */
+section {
+  width: 100%;
+  height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+/* contenedor de los cuatro divs de  arriba */
+.divContUp {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  gap: 20px;
+}
+/* contenedor izquierdo, sin el nav azul de la derecha */
+.div1 {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* contenedor Azul lado derecho: New y sus tres contenidos a la derecha en la parte de arriba */
+.div2 {
+  padding: 20px;
+  width: 28%;
+  background-color: var(--azul2);
+  border: solid red 1px;
+}
+/* h2 NEW */
+.div2 h2 {
+  color: var(--naranja);
+  font-size: 26px;
+}
+/* cards del contenedor azul oscuro */
+.div2 div {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.div2 :nth-child(3) {
+  border-top: solid 1px var(--azul1);
+  border-bottom: solid 1px var(--azul1);
+}
+
+.div2 div h4 {
+  color: #fff;
+}
+
+.div2 div h4:hover {
+  color: var(--naranja);
+  cursor: pointer;
+}
+
+.div2 div p {
+  color: var(--azul1);
+  font-size: 13px;
+}
+
+/* imagen mas grande */
+
+.div1__img {
+  height: 40vh;
+  width: 100%;
+  background-image: url(./frontendMentor/assets/images/image-web-3-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/* div contenedor de : titulo, parrafo y btn debajo de img */
+.div1__text {
+  display: flex;
+  gap: 20px;
+}
+.div1__h1 {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+}
+.div1__p {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.div1__h1 h1 {
+  font-size: 44px;
+  font-weight: 800;
+  width: 80%;
+  color: var(--azul2);
+}
+.div1__p p {
+  color: var(--azul1);
+}
+
+button {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px;
+  width: 50%;
+  background-color: var(--naranja);
+  color: var(--blanco);
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+button:hover {
+  background-color: var(--azul2);
+}
+/* contenedor de las tres cards horizontales de abajo */
+.divContDown {
+  height: 30%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* card individuales */
+.cardDown {
+  display: flex;
+  gap: 14px;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* las imagenes de cada una */
+.imgCard1 {
+  height: 105px;
+  width: 100px;
+  background-size: cover;
+  background-image: url(./frontendMentor/assets/images/image-retro-pcs.jpg);
+  background-position: center;
+}
+.imgCard2 {
+  height: 105px;
+  width: 100px;
+  background-size: cover;
+  background-image: url(./frontendMentor/assets/images/image-top-laptops.jpg);
+  background-position: center;
+}
+.imgCard3 {
+  height: 105px;
+  width: 100px;
+  background-size: cover;
+  background-image: url(./frontendMentor/assets/images/image-gaming-growth.jpg);
+  background-position: center;
+}
+
+/* div lado derecho con texto */
+.textCard {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+/* 01 02 03 de cada cards  */
+.divContDown .cardDown .textCard span {
+  font-size: 24px;
+  color: var(--celeste);
+  font-weight: 700;
+}
+
+.textCard h4 {
+  color: var(--azul2);
+  font-weight: 800;
+  cursor: pointer;
+}
+.textCard h4:hover {
+  color: var(--naranja);
+}
+.textCard p {
+  color: var(--azul1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: start;
+  width: auto;
+}
