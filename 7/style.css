@@ -148,7 +148,7 @@ button {
   font-weight: 700;
   padding: 12px;
   width: 50%;
-  background-color: var(--naranja);
+  background-color: var(--rojo);
   color: var(--blanco);
   cursor: pointer;
   letter-spacing: 1px;
@@ -219,7 +219,7 @@ button:hover {
   cursor: pointer;
 }
 .textCard h4:hover {
-  color: var(--naranja);
+  color: var(--rojo);
 }
 .textCard p {
   color: var(--azul1);
