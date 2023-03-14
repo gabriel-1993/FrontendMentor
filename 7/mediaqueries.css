@@ -1,0 +1,177 @@
+@media (max-width: 992px) {
+  section {
+    gap: 23px;
+  }
+  .divContUp {
+    display: flex;
+    flex-direction: column;
+  }
+  .div1 {
+    width: 100%;
+  }
+  .div1__p {
+    gap: 10px;
+  }
+  /* contenedor azul oscuro  */
+  .div2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .div2 h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  /* contenedor de las cards */
+  .divCardsNew {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* cards */
+  .divCardsNew div {
+    width: 30%;
+    padding: 0px 18px;
+  }
+  .divBorder {
+    border-top: none;
+    border-bottom: none;
+    border-left: solid 1px var(--azul1);
+    border-right: solid 1px var(--azul1);
+  }
+  /* h1 the bright future...? -font size*/
+  .div1__h1 h1 {
+    font-size: 2.6rem;
+  }
+
+  /* div contenedor azul marino -padding -gap */
+
+  button {
+    width: 100%;
+  }
+
+  /* ultimas 3 cards */
+  .cardDown {
+    height: 140px;
+    width: 33%;
+  }
+  /* 01 02 03 de cada cards  */
+  .divContDown .cardDown .textCard span {
+    font-size: 20px;
+  }
+  .textCard {
+    justify-content: unset;
+    height: 100%;
+  }
+  .textCard h4 {
+    font-size: 15px;
+  }
+  .textCard p {
+    font-size: 16px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* section {
+    gap: 23px;
+  }
+  .divContUp {
+    display: flex;
+    flex-direction: column;
+  }
+  .div1 {
+    width: 100%;
+  } */
+  /* cambio imagen a mobile */
+  .div1__img {
+    background-image: url(./frontendMentor/assets/images/image-web-3-mobile.jpg);
+  }
+  /* div del texto en columna */
+  .div1__text {
+    flex-direction: column;
+  }
+  /* agrego width al h1 estaba en 50% */
+  .div1__h1,
+  .div1__h1 h1 {
+    width: 100%;
+  }
+  /* agrego width al P estaba en 50% */
+  .div1__p,
+  .div1__p p {
+    width: 100%;
+  }
+  button {
+    margin: 20px 0px;
+    width: 55%;
+  }
+
+  .div2 h2 {
+    text-align: unset;
+    margin-bottom: 10px;
+  }
+
+  .divCardsNew {
+    flex-direction: column;
+  }
+  .divCardsNew div {
+    width: 100%;
+    padding: 17px;
+  }
+
+  .divBorder {
+    border-top: solid 1px var(--azul1);
+    border-bottom: solid 1px var(--azul1);
+    border-left: none;
+    border-right: none;
+  }
+  .divContDown {
+    margin-top: 12px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .cardDown {
+    width: 100%;
+    height: 150px;
+  }
+
+  /*01 02 03 de cada cards  */
+  .divContDown .cardDown .textCard span {
+    font-size: 26px;
+  }
+  /* .div1__p {
+    gap: 10px;
+  }
+  /* contenedor azul oscuro  */
+  /* .div2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  } */
+
+  /* contenedor de las cards */
+  /* .divCardsNew {
+    display: flex;
+    justify-content: space-around;
+  } */
+  /* cards */
+  /* .divCardsNew div {
+    width: 30%;
+    padding: 0px 18px;
+  }
+  .divBorder {
+    border-top: none;
+    border-bottom: none;
+    border-left: solid 1px var(--azul1);
+    border-right: solid 1px var(--azul1);
+  } */
+  /* h1 the bright future...? -font size*/
+  /* .div1__h1 h1 {
+    font-size: 2.6rem;
+  } */
+
+  /* div contenedor azul marino -padding -gap */
+  /* 
+  button {
+    width: 100%;
+  } */
+}
