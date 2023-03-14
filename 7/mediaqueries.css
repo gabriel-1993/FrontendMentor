@@ -72,16 +72,17 @@
 }
 
 @media (max-width: 768px) {
-  /* section {
-    gap: 23px;
+  header {
+    width: auto;
   }
   .divContUp {
     display: flex;
     flex-direction: column;
+    width: 95%;
   }
   .div1 {
     width: 100%;
-  } */
+  }
   /* cambio imagen a mobile */
   .div1__img {
     background-image: url(./frontendMentor/assets/images/image-web-3-mobile.jpg);
@@ -124,10 +125,13 @@
     border-left: none;
     border-right: none;
   }
+
+  /* contenedor 3 cards 01 02 03 */
   .divContDown {
     margin-top: 12px;
     flex-direction: column;
     gap: 15px;
+    width: 95%;
   }
   .cardDown {
     width: 100%;
@@ -138,40 +142,11 @@
   .divContDown .cardDown .textCard span {
     font-size: 26px;
   }
-  /* .div1__p {
-    gap: 10px;
-  }
-  /* contenedor azul oscuro  */
-  /* .div2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  } */
-
-  /* contenedor de las cards */
-  /* .divCardsNew {
-    display: flex;
+  .textCard {
     justify-content: space-around;
-  } */
-  /* cards */
-  /* .divCardsNew div {
-    width: 30%;
-    padding: 0px 18px;
+    gap: 2px;
   }
-  .divBorder {
-    border-top: none;
-    border-bottom: none;
-    border-left: solid 1px var(--azul1);
-    border-right: solid 1px var(--azul1);
-  } */
-  /* h1 the bright future...? -font size*/
-  /* .div1__h1 h1 {
-    font-size: 2.6rem;
-  } */
-
-  /* div contenedor azul marino -padding -gap */
-  /* 
-  button {
-    width: 100%;
-  } */
+  .textCard p {
+    line-height: 23px;
+  }
 }
