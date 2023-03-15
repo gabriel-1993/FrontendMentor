@@ -1,5 +1,9 @@
 // Botón para abrir y cerrar menú (div que lo contiene)
 const barsBtn = document.querySelector(".menu-label");
+// ||| logo menu responsive
+const abrirMenu = document.querySelector(".menu-icon1");
+// X logo cerrar menu responsive
+const cerrarMenu = document.querySelector(".menu-icon2");
 //  Menú (Hamburguesa)
 const barsMenu = document.querySelector(".navbar-list");
 //  Overlay para tirar facha abajo del menú hamburguesa y el cart.
@@ -13,6 +17,8 @@ const logoResponsiveX = document.querySelector(".menu-icon2");
 const toggleMenu = () => {
   barsMenu.classList.toggle("open-menu");
   overlay.classList.toggle("show-overlay");
+  abrirMenu.classList.add("menu-icon1Ocultar");
+  cerrarMenu.classList.add("menu-icon2X");
 };
 // funcion para cerrar el Menu responsive y remover el difuminado de fondo ,al hacer click unicamente en algun enlace
 const closeOnClick = (e) => {
@@ -39,17 +45,23 @@ const closeMenuOnClickOut = (e) => {
 };
 
 // funcion para cambiar de logo en el menu responsive de burguer (|||) a cerrar (X)
-// const cambiarLogo = (e) => {
-//   if(barsMenu.classList.contains("open-menu")
-//   {logoResponsive.classList.remove})
-// };
+const cambiarLogo = () => {
+  abrirMenu.classList.toggle("activo");
+  if (abrirMenu.classList.contains("activo")) {
+    abrirMenu.src = "./frontendMentor/assets/images/icon-menu.svg";
+  } else {
+    abrirMenu.src = "./frontendMentor/assets/images/icon-menu-close.svg";
+  }
+};
 
 // puerta de entrada
 const init = () => {
-  barsBtn.addEventListener("click", toggleMenu);
-  barsBtn.addEventListener("click", cambiarLogo);
+  abrirMenu.addEventListener("click", toggleMenu);
+  cerrarMenu.addEventListener("click", toggleMenu);
   barsMenu.addEventListener("click", closeOnClick);
   window.addEventListener("scroll", closeMenuOnScroll);
   overlay.addEventListener("click", closeMenuOnClickOut);
+  abrirMenu.addEventListener("click", cambiarLogo);
+  // cerrarMenu.addEventListener("click", cambiarLogo2);
 };
 init();

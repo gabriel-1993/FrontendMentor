@@ -27,7 +27,8 @@ header {
   justify-content: space-between;
 }
 /* MENU HAMBURGUESA Ocultar en Desktop  */
-.menu-label {
+
+.menu-icon1 {
   display: none;
 }
 

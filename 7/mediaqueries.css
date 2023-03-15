@@ -92,12 +92,13 @@
     line-height: 14px;
   }
 }
-
+/* **************************************************************************************************** */
 @media (max-width: 768px) {
   /*  Logo a la izquierda del header **/
   .wHeader {
     height: 40%;
   }
+
   /* menu que se muestra debajo del header para menu hamburguesa */
   .navbar-list {
     position: absolute;
@@ -120,17 +121,13 @@
     color: var(--azul2);
   }
 
-  /* Mostramos el icono del menu */
-  .menu-label {
+  /* Mostramos el icono del menu div contenedor */
+  .activo {
     display: flex;
     order: 2;
     cursor: pointer;
   }
-  /* tamaño para el icono hamburguesa */
-  .menu-label img {
-    height: 20px;
-    width: 25px;
-  }
+
   /* menu hamburguesa, le quitamos el none aplicado en desktop para mostrarlo*/
   .open-menu {
     display: flex;
