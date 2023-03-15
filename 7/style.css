@@ -31,13 +31,6 @@ header {
   display: none;
 }
 
-/* *********************** letra a la izquierda del header *********************/
-.wHeader {
-  font-size: 40px;
-  font-weight: 800;
-  color: var(--azul2);
-}
-
 .navbar-list {
   display: flex;
   gap: 25px;
@@ -85,7 +78,6 @@ section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 55px;
 }
@@ -99,7 +91,7 @@ section {
 }
 /*************************** contenedor izquierdo, sin el nav azul de la derecha */
 .div1 {
-  width: 72%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -109,28 +101,36 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 20px;
-  width: 28%;
-  height: auto;
+  padding: 18px;
+  width: 30%;
+  min-height: 100%;
   background-color: var(--azul2);
 }
 /* h2 NEW */
 .div2 h2 {
   color: var(--naranja);
-  font-size: 26px;
+  font-size: 1.8rem;
+}
+.divCardsNew {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* cards del contenedor azul oscuro */
 .divCardsNew div {
-  padding: 18px 0px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 6px;
+  height: 32%;
+  justify-content: center;
 }
 .divBorder {
-  border-top: solid 1px var(--azul1);
   border-bottom: solid 1px var(--azul1);
+  border-top: solid 1px var(--azul1);
 }
+
 /* lado derecho contenedor azul */
 
 .div2 div h4 {
@@ -151,7 +151,7 @@ section {
 /* imagen mas grande */
 
 .div1__img {
-  height: 40vh;
+  height: 35vh;
   width: 100%;
   background-image: url(./frontendMentor/assets/images/image-web-3-desktop.jpg);
   background-position: center;

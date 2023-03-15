@@ -4,6 +4,10 @@ const barsBtn = document.querySelector(".menu-label");
 const barsMenu = document.querySelector(".navbar-list");
 //  Overlay para tirar facha abajo del menú hamburguesa y el cart.
 const overlay = document.querySelector(".overlay");
+// Logo menu responsive antes de abrirlo
+const logoResponsive = document.querySelector(".menu-icon1");
+// Logo menu responsive X para cerrarlo
+const logoResponsiveX = document.querySelector(".menu-icon2");
 
 // funcion para hacer ON/OFF(Click) al Menu y al overlay de fondo.
 const toggleMenu = () => {
@@ -34,9 +38,16 @@ const closeMenuOnClickOut = (e) => {
   overlay.classList.remove("show-overlay");
 };
 
+// funcion para cambiar de logo en el menu responsive de burguer (|||) a cerrar (X)
+// const cambiarLogo = (e) => {
+//   if(barsMenu.classList.contains("open-menu")
+//   {logoResponsive.classList.remove})
+// };
+
 // puerta de entrada
 const init = () => {
   barsBtn.addEventListener("click", toggleMenu);
+  barsBtn.addEventListener("click", cambiarLogo);
   barsMenu.addEventListener("click", closeOnClick);
   window.addEventListener("scroll", closeMenuOnScroll);
   overlay.addEventListener("click", closeMenuOnClickOut);

@@ -33,12 +33,21 @@
   /* contenedor de las cards */
   .divCardsNew {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
   /* cards */
   .divCardsNew div {
-    width: 30%;
-    padding: 0px 18px;
+    padding: 0px 15px;
+    padding-left: 0px;
+    width: 33%;
+    height: 190px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .divCardsNew div h4 {
+    text-align: center;
   }
   .divBorder {
     border-top: none;
@@ -55,6 +64,11 @@
 
   button {
     width: 100%;
+  }
+  /* p de las cards lado azul oscuro */
+  .div2 div p {
+    text-align: center;
+    line-height: 25px;
   }
 
   /* ultimas 3 cards */
@@ -80,6 +94,10 @@
 }
 
 @media (max-width: 768px) {
+  /*  Logo a la izquierda del header **/
+  .wHeader {
+    height: 40%;
+  }
   /* menu que se muestra debajo del header para menu hamburguesa */
   .navbar-list {
     position: absolute;
@@ -161,10 +179,23 @@
 
   .divCardsNew {
     flex-direction: column;
+    padding: 0px;
   }
   .divCardsNew div {
     width: 100%;
-    padding: 17px;
+    padding: 34px;
+    height: auto;
+    align-items: unset;
+  }
+  /* titulo de las cardsNew */
+  .divCardsNew div h4 {
+    font-size: 1.3rem;
+    text-align: unset;
+  }
+  /* p de las cards lado azul oscuro */
+  .div2 div p {
+    text-align: unset;
+    font-size: 1rem;
   }
 
   .divBorder {
@@ -188,13 +219,16 @@
 
   /*01 02 03 de cada cards  */
   .divContDown .cardDown .textCard span {
-    font-size: 26px;
+    font-size: 1.7rem;
   }
   .textCard {
     justify-content: space-around;
     gap: 2px;
   }
+  .textCard h4 {
+    font-size: 1rem;
+  }
   .textCard p {
-    line-height: 23px;
+    line-height: 22px;
   }
 }
