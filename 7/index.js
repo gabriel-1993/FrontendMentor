@@ -34,6 +34,7 @@ const closeMenuOnClickOut = (e) => {
   overlay.classList.remove("show-overlay");
 };
 
+// puerta de entrada
 const init = () => {
   barsBtn.addEventListener("click", toggleMenu);
   barsMenu.addEventListener("click", closeOnClick);
