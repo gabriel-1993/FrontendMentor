@@ -102,7 +102,7 @@ section {
 .divimg7 {
   width: 40px;
   height: 40px;
-  background-image: url(./notifications-page-main/assets/images/avatar-mark-webber.webp);
+  background-image: url(./assets/images/avatar-mark-webber.webp);
   background-position: center;
   background-size: cover;
 }
@@ -146,20 +146,18 @@ section {
   font-size: 0.8rem;
   font-weight: 800;
   color: var(--Verydarkblue);
+  border: orange 2px solid;
 }
+
 /* primer msj despues del usuario */
 .p1Notificacion {
   font-size: 0.8rem;
   color: var(--darkgrayishblue);
-  display: flex;
-  position: relative;
 }
 .p2Post {
   font-weight: 800;
   color: var(--darkgrayishblue);
   font-size: 0.8rem;
-  display: flex;
-  flex-wrap: wrap;
 }
 .tiempo {
   color: var(--grayishblue);
