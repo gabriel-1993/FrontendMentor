@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --verylightgrayishblue: hsl(210, 60%, 98%);
+  --lightgrayishblue1: hsl(211, 68%, 94%);
+  --lightgrayishblue2: hsl(205, 33%, 90%);
+  --grayishblue: hsl(219, 14%, 63%);
+  --darkgrayishblue: hsl(219, 12%, 42%);
+  --Verydarkblue: hsl(224, 21%, 14%);
+}
+/* - Font size (paragraph): 16px */
+/* ### Font
+  - Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
+  - Weights: 500, 800 */
+
+section {
+  width: 100%;
+  padding: 15px 0px;
+  border: SOLID RED 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--verylightgrayishblue);
+}
+/* div centrado en la pantalla con las notif */
+.divContenedor {
+  width: min(555px, 90%);
+  height: 90%;
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 9px 9px 30px var(--lightgrayishblue2);
+}
+/* div de notification cantidad , mark all ... */
+.divTit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+  align-items: center;
+}
+/* notifications */
+.notif {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--Verydarkblue);
+}
+/* cantidad de noti */
+.spanCantidad {
+  background-color: var(--Blue);
+  color: var(--white);
+  padding: 1px 9px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-left: 8px;
+  font-weight: 400;
+}
+.pOkTodas {
+  color: var(--darkgrayishblue);
+  cursor: pointer;
+}
+
+.pOkTodas:hover {
+  color: var(--Blue);
+}
+/****************************************div contenedor de las cards de notificaciones*********************** */
+.divNotificaciones {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: var(--verylightgrayishblue);
+  border-radius: 5px;
+  justify-content: space-around;
+}
+/* la que se muestra como desplazada con el msj de la notificacion en si */
+.notificacionAbierta {
+  align-items: unset;
+}
+
+/* imagen del primer usuario */
+.divimg,
+.divimg2,
+.divimg3,
+.divimg4,
+.divimg5,
+.divimg6,
+.divimg7 {
+  width: 40px;
+  height: 40px;
+  background-image: url(./notifications-page-main/assets/images/avatar-mark-webber.webp);
+  background-position: center;
+  background-size: cover;
+}
+.divimg2 {
+  background-image: url(./assets/images/avatar-angela-gray.webp);
+}
+.divimg3 {
+  background-image: url(./assets/images/avatar-jacob-thompson.webp);
+}
+.divimg4 {
+  background-image: url(./assets/images/avatar-rizky-hasanuddin.webp);
+}
+.divimg5 {
+  background-image: url(./assets/images/avatar-kimberly-smith.webp);
+}
+.divimg6 {
+  background-image: url(./assets/images/avatar-nathan-peterson.webp);
+}
+.divimg7 {
+  background-image: url(./assets/images/avatar-anna-kim.webp);
+}
+
+/* div del texto al costado de la imagen del usuario */
+.divRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 2px yellow;
+  width: 90%;
+}
+
+.divText {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: solid 1px blue;
+  gap: 8px;
+}
+/* nombre usuario */
+.pUsuario {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--Verydarkblue);
+}
+/* primer msj despues del usuario */
+.p1Notificacion {
+  font-size: 0.8rem;
+  color: var(--darkgrayishblue);
+  display: flex;
+  position: relative;
+}
+.p2Post {
+  font-weight: 800;
+  color: var(--darkgrayishblue);
+  font-size: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tiempo {
+  color: var(--grayishblue);
+  font-size: 12px;
+}
+.puntoRojo {
+  height: 6px;
+  width: 6px;
+  background-color: red;
+  border-radius: 50%;
+}
+.msjP {
+  margin-top: 7px;
+  font-size: 0.8rem;
+  color: var(--darkgrayishblue);
+  padding: 10px;
+  border: solid 1px var(--grayishblue);
+  width: 100%;
+  border-radius: 4px;
+}
