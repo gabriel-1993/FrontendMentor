@@ -13,6 +13,17 @@ const logoResponsive = document.querySelector(".menu-icon1");
 // Logo menu responsive X para cerrarlo
 const logoResponsiveX = document.querySelector(".menu-icon2");
 
+// funcion para cambiar de logo en el menu responsive de burguer (|||) a cerrar (X)
+const cambiarLogo = () => {
+  barsMenu.classList.toggle("open-menu");
+  overlay.classList.toggle("show-overlay");
+  if (barsMenu.classList.contains("open-menu")) {
+    abrirMenu.src = "./frontendMentor/assets/images/icon-menu-close.svg";
+  } else {
+    abrirMenu.src = "./frontendMentor/assets/images/icon-menu.svg";
+  }
+};
+
 // funcion para cerrar el Menu responsive y remover el difuminado de fondo ,al hacer click unicamente en algun enlace
 const closeOnClick = (e) => {
   if (!e.target.classList.contains("navbar-link")) {
@@ -38,22 +49,12 @@ const closeMenuOnClickOut = (e) => {
   barsMenu.classList.remove("open-menu");
   overlay.classList.remove("show-overlay");
 };
-// funcion para cambiar de logo en el menu responsive de burguer (|||) a cerrar (X)
-const cambiarLogo = () => {
-  barsMenu.classList.toggle("open-menu");
-  overlay.classList.toggle("show-overlay");
-  if (barsMenu.classList.contains("open-menu")) {
-    abrirMenu.src = "./frontendMentor/assets/images/icon-menu-close.svg";
-  } else {
-    abrirMenu.src = "./frontendMentor/assets/images/icon-menu.svg";
-  }
-};
 
 // puerta de entrada
 const init = () => {
+  abrirMenu.addEventListener("click", cambiarLogo);
   barsMenu.addEventListener("click", closeOnClick);
   window.addEventListener("scroll", closeMenuOnScroll);
   overlay.addEventListener("click", closeMenuOnClickOut);
-  abrirMenu.addEventListener("click", cambiarLogo);
 };
 init();
