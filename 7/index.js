@@ -21,11 +21,6 @@ const closeOnClick = (e) => {
     barsMenu.classList.remove("open-menu");
     overlay.classList.remove("show-overlay");
   }
-  if (barsMenu.classList.contains("open-menu")) {
-    abrirMenu.src = "./frontendMentor/assets/images/icon-menu-close.svg";
-  } else {
-    abrirMenu.src = "./frontendMentor/assets/images/icon-menu.svg";
-  }
 };
 
 // funcion para ocultar el Menu responsive es caso de Scrolear
@@ -36,22 +31,12 @@ const closeMenuOnScroll = (e) => {
     barsMenu.classList.remove("open-menu");
     overlay.classList.remove("show-overlay");
   }
-  if (barsMenu.classList.contains("open-menu")) {
-    abrirMenu.src = "./frontendMentor/assets/images/icon-menu-close.svg";
-  } else {
-    abrirMenu.src = "./frontendMentor/assets/images/icon-menu.svg";
-  }
 };
 
 // funcion para cerrar el menu cuando hagamos click fuera ,es decir sobre el overlay
 const closeMenuOnClickOut = (e) => {
   barsMenu.classList.remove("open-menu");
   overlay.classList.remove("show-overlay");
-  if (barsMenu.classList.contains("open-menu")) {
-    abrirMenu.src = "./frontendMentor/assets/images/icon-menu-close.svg";
-  } else {
-    abrirMenu.src = "./frontendMentor/assets/images/icon-menu.svg";
-  }
 };
 // funcion para cambiar de logo en el menu responsive de burguer (|||) a cerrar (X)
 const cambiarLogo = () => {
