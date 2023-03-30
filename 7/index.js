@@ -13,15 +13,23 @@ const logoResponsive = document.querySelector(".menu-icon1");
 // Logo menu responsive X para cerrarlo
 const logoResponsiveX = document.querySelector(".menu-icon2");
 
-// funcion para cambiar de logo en el menu responsive de burguer (|||) a cerrar (X)
-const cambiarLogo = () => {
-  barsMenu.classList.toggle("open-menu");
-  overlay.classList.toggle("show-overlay");
+//Podrias armarte una funcion que checkee si el menu está abierto o no
+//y haga lo que necesitas y despues la ejecutas cuando scrolleas o clickeas afuera o lo que fuere
+
+//Funcion para actualizar logo cuando se abra o cierre el menu responsive
+const estadoMenuResp = () => {
   if (barsMenu.classList.contains("open-menu")) {
     abrirMenu.src = "./frontendMentor/assets/images/icon-menu-close.svg";
   } else {
     abrirMenu.src = "./frontendMentor/assets/images/icon-menu.svg";
   }
+};
+
+// funcion para mostrar ocultar el menu responsive
+const menuRespOnOff = () => {
+  barsMenu.classList.toggle("open-menu");
+  overlay.classList.toggle("show-overlay");
+  estadoMenuResp();
 };
 
 // funcion para cerrar el Menu responsive y remover el difuminado de fondo ,al hacer click unicamente en algun enlace
@@ -31,6 +39,7 @@ const closeOnClick = (e) => {
   } else {
     barsMenu.classList.remove("open-menu");
     overlay.classList.remove("show-overlay");
+    estadoMenuResp();
   }
 };
 
@@ -41,6 +50,7 @@ const closeMenuOnScroll = (e) => {
   } else {
     barsMenu.classList.remove("open-menu");
     overlay.classList.remove("show-overlay");
+    estadoMenuResp();
   }
 };
 
@@ -48,11 +58,12 @@ const closeMenuOnScroll = (e) => {
 const closeMenuOnClickOut = (e) => {
   barsMenu.classList.remove("open-menu");
   overlay.classList.remove("show-overlay");
+  estadoMenuResp();
 };
 
 // puerta de entrada
 const init = () => {
-  abrirMenu.addEventListener("click", cambiarLogo);
+  abrirMenu.addEventListener("click", menuRespOnOff);
   barsMenu.addEventListener("click", closeOnClick);
   window.addEventListener("scroll", closeMenuOnScroll);
   overlay.addEventListener("click", closeMenuOnClickOut);

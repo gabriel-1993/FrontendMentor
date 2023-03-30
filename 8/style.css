@@ -81,7 +81,6 @@ section {
 /****************************************div contenedor de las cards de notificaciones*********************** */
 .divNotificaciones {
   display: flex;
-  align-items: center;
   padding: 8px;
   background-color: var(--verylightgrayishblue);
   border-radius: 5px;
@@ -130,15 +129,18 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: solid 2px yellow;
   width: 90%;
+}
+
+/* Achico el div contenedor del texto en Kimberly Smith, para poder agregar una img a la derecha */
+.divNotificaciones:nth-child(6) .divRight {
+  width: 80%;
 }
 
 .divText {
   display: flex;
   align-items: center;
   width: 100%;
-  border: solid 1px blue;
   gap: 8px;
 }
 /* nombre usuario */
@@ -146,17 +148,15 @@ section {
   font-size: 0.8rem;
   font-weight: 800;
   color: var(--Verydarkblue);
-  border: orange 2px solid;
 }
-
 /* primer msj despues del usuario */
 .p1Notificacion {
   font-size: 0.8rem;
   color: var(--darkgrayishblue);
 }
-.p2Post {
+.span2Post {
   font-weight: 800;
-  color: var(--darkgrayishblue);
+  color: var(--Verydarkblue);
   font-size: 0.8rem;
 }
 .tiempo {
@@ -164,10 +164,9 @@ section {
   font-size: 12px;
 }
 .puntoRojo {
-  height: 6px;
-  width: 6px;
-  background-color: red;
-  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  margin-left: 3px;
 }
 .msjP {
   margin-top: 7px;
@@ -177,4 +176,9 @@ section {
   border: solid 1px var(--grayishblue);
   width: 100%;
   border-radius: 4px;
+}
+
+.imgNoti {
+  height: 40px;
+  width: 40px;
 }
