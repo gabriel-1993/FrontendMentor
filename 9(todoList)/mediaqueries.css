@@ -1,0 +1,15 @@
+@media (max-width: 625px) {
+  .agregarForm {
+    flex-direction: column;
+    width: 95%;
+    gap: 14px;
+  }
+  .input-container {
+    width: 100%;
+  }
+
+  .agregar {
+    padding: 10px 30px;
+    width: 100%;
+  }
+}
