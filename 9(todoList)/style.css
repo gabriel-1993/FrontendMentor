@@ -65,7 +65,7 @@ h1 {
 }
 
 .agregar {
-  background: linear-gradient(45deg, #3f61fc, #03286d);
+  background: linear-gradient(45deg, #588157, #344e41);
   color: #fff;
   font-size: 13px;
   font-weight: 700;
@@ -78,7 +78,7 @@ h1 {
 /* boton agregar y borrar todo hover */
 .agregar:hover,
 .borrarTodo:hover {
-  background: linear-gradient(45deg, #2945c4, #022462);
+  background: linear-gradient(45deg, #588157, #344e41);
 }
 .listaTareas {
   display: flex;
