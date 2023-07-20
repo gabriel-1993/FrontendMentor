@@ -28,7 +28,6 @@
 section {
   width: 100%;
   padding: 15px 0px;
-  border: SOLID RED 2px;
   display: flex;
   justify-content: center;
   align-items: center;
