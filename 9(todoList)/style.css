@@ -78,7 +78,7 @@ h1 {
 /* boton agregar y borrar todo hover */
 .agregar:hover,
 .borrarTodo:hover {
-  background: linear-gradient(45deg, #588157, #344e41);
+  background: #344e41;
 }
 .listaTareas {
   display: flex;
@@ -107,7 +107,7 @@ h1 {
 
 .borrarTodo {
   margin-top: 30px;
-  background: linear-gradient(45deg, #3f61fc, #03286d);
+  background: linear-gradient(45deg, #588157, #344e41);
   outline: none;
   border: 0px solid;
   padding: 15px 40px;
