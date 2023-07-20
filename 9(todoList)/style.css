@@ -61,6 +61,7 @@ h1 {
   color: #fff;
   border-radius: 8px;
   background: #474747;
+  outline: none;
 }
 .input-text:focus {
   border: none;
