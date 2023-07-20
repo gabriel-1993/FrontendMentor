@@ -58,10 +58,16 @@ h1 {
 .input-text {
   padding: 15px 30px;
   width: 350px;
-
   color: #fff;
   border-radius: 8px;
   background: #474747;
+}
+.input-text:focus {
+  border: none;
+}
+
+.input-text:active {
+  border: none;
 }
 
 .agregar {
@@ -92,10 +98,11 @@ h1 {
   background: #474747;
   border-radius: 8px;
   display: flex;
+  border: none;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 30px;
+  padding: 14px 30px;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 /* logo borrar en cada tarea */
