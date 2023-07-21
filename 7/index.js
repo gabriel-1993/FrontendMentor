@@ -13,9 +13,6 @@ const logoResponsive = document.querySelector(".menu-icon1");
 // Logo menu responsive X para cerrarlo
 const logoResponsiveX = document.querySelector(".menu-icon2");
 
-//Podrias armarte una funcion que checkee si el menu está abierto o no
-//y haga lo que necesitas y despues la ejecutas cuando scrolleas o clickeas afuera o lo que fuere
-
 //Funcion para actualizar logo cuando se abra o cierre el menu responsive
 const estadoMenuResp = () => {
   if (barsMenu.classList.contains("open-menu")) {
